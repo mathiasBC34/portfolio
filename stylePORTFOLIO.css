@@ -1,0 +1,836 @@
+ *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+} 
+
+@font-face {
+    font-family: "Cyberpunks";
+    src: url("/police_ecriture/Cyberpunks_Italic.ttf") format("truetype"); 
+}
+
+
+
+
+body {
+    color: #ffffff;
+    background: linear-gradient(to right, rgb(30, 2, 77), rgb(18, 32, 154), rgb(31, 19, 80));
+    background-size: 400% 400%;
+    animation: animation-background 10s infinite ease-in-out;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+    /* clip-path: polygon(0 0, 57% 52%, 57% 53%, 0% 100%);
+    overflow: visible; */
+}
+
+/* .fond-2{
+    
+    background-color: #08337c;
+   
+} */
+
+@keyframes animation-background {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-image: 0 50%;
+    }
+}
+
+
+/*<-----------------------------------------pour la réalisation---------------------------------------->*/
+
+/* touche tout les h2 a changer pour plus de précision */
+ h2 {
+    font-size: 1.2em;
+}
+
+
+#page {
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 70%);
+    margin-top: 15px;
+}
+
+.header {
+    background-color: #000000;
+    color: #5b61bc;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+
+/*<------------------premier image----------------->*/
+
+.wrapper,
+.wrapper2,
+.wrapper3,
+.wrapper4,
+.single-card,
+.single-card2, 
+.single-card3,
+.single-card4 {
+    height: 300px;
+    max-width: 200px;
+    margin: auto;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.wrapper,
+.wrapper2,
+.wrapper3,
+.wrapper4 {
+    perspective: 500px;
+}
+
+.single-card, 
+.single-card2, 
+.single-card3, 
+.single-card4 {
+    text-align: center;
+    transition: all 1.5s cubic-bezier(0.7,-.5, 0.3, 1.8);
+    transform-style: preserve-3d;
+}
+
+.wrapper:hover .single-card,
+.wrapper2:hover .single-card2,
+.wrapper3:hover .single-card3,
+.wrapper4:hover .single-card4{
+    transform: rotateY(180deg);
+}
+
+.front,
+.front2,
+.front3,
+.front4,
+.back,
+.back2,
+.back3,
+.back4{
+    width: 300px;
+    position: relative;
+    top:0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.front{
+    cursor: pointer;
+    height: 300px;
+    background-image: url(./images_standar_index/musicc.jpg);
+    backface-visibility: hidden;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+}
+
+.back,
+.back2,
+.back3,
+.back4{
+    transform: rotateY(180deg);
+    position: absolute;
+    border-radius: 15px;
+    height: 300px;
+    background: #fff;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;
+}
+
+.content,
+.content2,
+.content3,
+.content4{
+    padding-top: 15%;
+}
+
+.content h2,
+.content2 h2,
+.content3 h2,
+.content4 h2{
+    font-size: 35px;
+    margin: 0;
+    color: #08337c;
+    font-weight: 300;
+}
+
+.content h4,
+.content2 h4,
+.content3 h4,
+.content4 h4{
+    margin: 0;
+    color: #08337c;
+}
+
+.socials,
+.socials2,
+.socials3,
+.socials4{
+    margin-top: 20%;
+    color: #08337c;
+}
+
+.socials a,
+.socials2 a,
+.socials3 a,
+.socials4 a{
+    font-size: 30px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.fa{
+    color: #08337c;
+}
+/*<------------------premier image----------------->*/
+/*<------------------deuxieme image----------------->*/
+
+
+
+.front2{
+    cursor: pointer;
+    height: 300px;
+    background-image: url(./images_standar_index/IMG20220901171745.jpg);
+    backface-visibility: hidden;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+}
+/*<------------------deuxieme image----------------->*/
+/*<------------------troisième image----------------->*/
+
+.front3{
+    cursor: pointer;
+    height: 300px;
+    background-image: url(./images_standar_index/badmintone.webp);
+    backface-visibility: hidden;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+}
+/*<------------------troisième image----------------->*/
+/*<------------------quatrième image----------------->*/
+
+.front4{
+    cursor: pointer;
+    height: 300px;
+    background-image: url(./images_standar_index/logo.png);
+    backface-visibility: hidden;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+}
+/*<------------------quatrième image----------------->*/
+
+
+
+
+
+/*------------------------------- fin réalisation------------------------------*/
+
+/*------------------------------- debut style error -------------------------------*/
+.error_style {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contour_error {
+    background-color: red;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error_cligno {
+    width: 25%;
+    height: 15%;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: cligno;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    color: #000000;
+    font-size: 40px;
+}
+
+@keyframes cligno {
+    25% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: yellowgreen;
+    }
+
+    75% {
+        background-color: red;
+    }
+}
+
+/*------------------------------- fin style error -------------------------------*/
+
+/*------------------------------- debut style CV -------------------------------*/
+#CorpsPage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.Presentation{
+    background-color: #13132c;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    margin-top: 47px;
+    margin-bottom: 8px;
+    box-shadow: 5px 5px 12px black;
+}
+
+#TeteDuCv{
+    display: flex;
+    margin: 2%;
+    flex-direction: column;
+    box-shadow: 5px 5px 12px black;
+    padding: 2%;
+    background-color: #2f1042;
+}
+
+#PremierTete{
+    font-size: 150%;
+    margin-bottom: 5px;
+}
+
+.expositionDeM{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-color: rgb(34, 17, 165);
+    margin: 5px;
+    box-shadow: 5px 8px 12px black;
+}
+
+.P{
+    margin: 3.5px;
+}
+/*------------------------------- fin style CV -------------------------------*/
+
+/*------------------------------- debut style veilletec -------------------------------*/
+.titre_veil{
+    top: -30px;
+    position: absolute;
+    background: darkblue;
+    padding: 12px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.veille{
+    width: auto;
+    position: relative;
+    top:0;
+    left: 0;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    margin: 5% 5% 5%; 
+}
+
+.contenaire_veil{
+    box-shadow: 5px 5px 15px black;
+    display: flex;
+    flex-direction: column;
+    background-color: white ;
+}
+
+.bloc_veil{
+    box-shadow: 5px 5px 15px black;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 5px;
+    display: flex;
+    background-color: #08337c;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h1_veil{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+
+/*------------------------------- fin style veilletec -------------------------------*/
+
+/*------------------------------- debut style acceuil -------------------------------*/
+.acceuil_apparition {
+    margin-top: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: apparition 2.0 ease-out;
+    margin-bottom: 35px;
+    color: white;
+    box-shadow: 5px 5px 15px black;
+    padding: 2%;
+    border: solid white 2px;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(1px);
+    }
+}
+
+[class*="reveal-"] {
+    opacity: 0;
+    transform: translateY(-30);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+.reveal-2 {
+    transition-delay: .1s;
+}
+
+.reveal-3 {
+    transition-delay: .2s;
+}
+
+.reveal-4 {
+    transition-delay: .3s;
+}
+
+.reveal-5 {
+    transition-delay: .4s;
+}
+
+.reveal-6 {
+    transition-delay: .5s;
+}
+
+.corps_moi {
+    display: flex;
+    flex-direction: column;
+    background-color: #08337c;
+    padding: 15px;
+    max-width: 480px;
+    box-shadow: 5px 5px 12px black;
+    margin-left: 15px;
+}
+
+.posi1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posi2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    margin-bottom: 100px;
+}
+
+.posi4 {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #08337c;
+    margin-left: 60%;
+    flex-direction: column;
+    box-shadow: -7px 5px 12px black;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.posi5 {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #08337c;
+    max-width: 40%;
+    flex-direction: column;
+    box-shadow: 5px 5px 12px black;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    
+}
+
+.posi6 {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #08337c;
+    max-width: 40%;
+    margin-left: 60%;
+    flex-direction: column;
+    box-shadow: -7px 5px 12px black;
+    padding: 15px;
+    
+}
+
+.contenaire_fond {
+    rotate: 15deg;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(3, 7rem);
+    grid-template-rows: repeat(4, 5rem);
+    grid-template-areas:
+        "fond_ecrt1 fond_ecrt2 . "
+        "fond_ecrt3 fond_ecrt4 fond_ecrt5"
+        "fond_ecrt6 fond_ecrt7 fond_ecrt8"
+        " . fond_ecrt9 fond_ecrt10";
+}
+
+.fond_ecrt1 {
+    grid-area: fond_ecrt1;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    background-color: #4a3939;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fond_ecrt2 {
+    grid-area: fond_ecrt2;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    background-color: #acbf21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fond_ecrt3 {
+    grid-area: fond_ecrt3;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    background-color: #79832e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fond_ecrt4 {
+    grid-area: fond_ecrt4;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    background-color: #fb0808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fond_ecrt5 {
+    grid-area: fond_ecrt5;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    background-color: #a50000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fond_ecrt6 {
+    grid-area: fond_ecrt6;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    background-color: #0ee966;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fond_ecrt7 {
+    grid-area: fond_ecrt7;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    background-color: #08337c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fond_ecrt8 {
+    grid-area: fond_ecrt8;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    background-color: #13132c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fond_ecrt9 {
+    grid-area: fond_ecrt9;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    background-color: #84ff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fond_ecrt10 {
+    grid-area: fond_ecrt10;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    background-color: #4070ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_acc {
+    width: 300px;
+    height: 300px;
+    border: #000000 solid;
+    border-radius: 50%;
+}
+
+.img_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 310px;
+    background-color: #08337c;
+    box-shadow: 1px 1px 12px #000000;
+    border-radius: 180px;
+}
+/*------------------------------- fin style acceuil -------------------------------*/
+
+/*------------------------------- debut style header -------------------------------*/
+.contour_head {
+    background: linear-gradient(87deg, rgba(0, 0, 0, 0.8662815467984069) 0%, rgba(9, 60, 121, 1) 25%, rgba(0, 0, 0, 1) 50%, rgba(9, 60, 121, 1) 75%, rgba(0, 0, 0, 0.8690826672465861) 100%);
+    width: auto;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+}
+
+.head_style {
+    font-size: 17px;
+    margin-left: 25px;
+}
+
+.neon_text_no {
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+    font-size: 300%;
+    font-family: "Cyberpunks";
+}
+
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow:
+            0 0 4px rgb(72, 47, 231),
+            0 0 11px rgb(72, 47, 231),
+            0 0 19px rgb(72, 47, 231),
+            0 0 40px rgb(30, 129, 227),
+            0 0 80px rgb(30, 129, 227),
+            0 0 90px rgb(30, 129, 227),
+            0 0 100px rgb(30, 129, 227),
+            0 0 150px #ffa;
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+
+.neon_texte {
+    font-size: 300%;
+    color: #fff;
+    font-family: "Cyberpunks";
+    text-shadow:
+    0 0 4px rgb(72, 47, 231),
+    0 0 11px rgb(72, 47, 231),
+    0 0 19px rgb(72, 47, 231),
+    0 0 40px rgb(30, 129, 227),
+    0 0 80px rgb(30, 129, 227),
+    0 0 90px rgb(30, 129, 227),
+    0 0 100px rgb(30, 129, 227),
+    0 0 150px #ffa;
+}
+
+/*------------------------------- fin style header -------------------------------*/
+
+/*------------------------------- debut style nav -------------------------------*/
+
+.contenaire_nav {
+    position: relative; 
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    background-color: #13132c;
+    width: auto;
+    padding: 1.5%;
+    box-shadow: 5px 5px 15px black;
+    color: #fff;
+}
+
+ul{
+    display: flex;
+}
+
+li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.four,
+.three,
+.one,
+.two {
+    border: none;
+    outline: none;
+    width: 140px;
+    height: 40px;
+    transition: 0.4 ease;
+    background-color: rgb(34, 21, 132);
+    font-size: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px black;
+}
+
+.four:hover,
+.three:hover,
+.one:hover,
+.two:hover {
+    cursor: pointer;
+    background-color: rgb(64, 16, 113);
+    box-shadow: 0 0 5px rgb(33, 17, 124),
+                 0 0 20px rgb(53, 4, 69),
+                 0 0 60px rgb(75, 4, 146),
+                 0 0 120px rgb(31, 2, 81);
+}
+
+
+.five{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+}
+
+/*------------------------------- fin style nav -------------------------------*/
+
+/*------------------------------- debut style footer -------------------------------*/
+/*------------------------------- fin style footer -------------------------------*/
